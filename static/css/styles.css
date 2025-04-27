@@ -1,0 +1,104 @@
+/* static/css/styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* تحسين النافبار */
+.navbar {
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700 !important; /* لون ذهبي عند التمرير */
+}
+
+/* تحسين البطاقات */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-top {
+    border-radius: 8px 8px 0 0;
+}
+
+/* تحسين شريط التقدم */
+.progress {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    transition: width 0.5s ease;
+}
+
+/* تحسين النماذج */
+.form-control {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* تحسين التنبيهات */
+.alert {
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+/* التجاوب على الهواتف */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .login-box, .success-box {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .btn-primary {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
