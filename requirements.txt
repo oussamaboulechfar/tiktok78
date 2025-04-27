@@ -1,4 +1,10 @@
-asgiref==3.8.1
 Django==5.2
-pillow==11.2.1
+Pillow==11.2.1
+asgiref==3.8.1
 sqlparse==0.5.3
+gunicorn==23.0.0
+dj-database-url==2.3.0
+psycopg2-binary==2.9.10
+python-decouple==3.8
+django-cloudinary-storage==0.3.0
+cloudinary==1.42.0
